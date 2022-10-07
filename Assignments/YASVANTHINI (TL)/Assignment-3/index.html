@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Shopping</title>
+    <link rel="stylesheet" href="https://ibmproject7.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+    
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">KIDDO</a>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br><br><br>
+ <img src="https://ibmproject7.s3.jp-tok.cloud-object-storage.appdomain.cloud/Image-1.png" alt="Online Shopping ">
+ <img src="https://ibmproject7.s3.jp-tok.cloud-object-storage.appdomain.cloud/Image-2.jpeg" alt="Online Shopping ">
+ <img src="https://ibmproject7.s3.jp-tok.cloud-object-storage.appdomain.cloud/Image-3.jpg" alt="Online Shopping ">
+ <img src="https://ibmproject7.s3.jp-tok.cloud-object-storage.appdomain.cloud/Image-4.png" alt="Online Shopping ">
+ <img src="https://ibmproject7.s3.jp-tok.cloud-object-storage.appdomain.cloud/Image-5.jpg" alt="Online Shopping ">
+
+
+ <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "1daa4da2-5c34-4a29-a98a-965f4a04373b", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "6ef1f286-5fb4-4252-a983-cba72e501514", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
