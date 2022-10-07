@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <link rel="stylesheet" href="https://shopping.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">FIGO</a>
+      </div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br><br><br>
+ <img src="https://shopping.s3.jp-tok.cloud-object-storage.appdomain.cloud/img/shopping.jpg" alt=" A Shopping bag">
+ <img src="https://shopping.s3.jp-tok.cloud-object-storage.appdomain.cloud/img/shopping%201.jpg" alt=" A Shopping bag">
+ <img src="https://shopping.s3.jp-tok.cloud-object-storage.appdomain.cloud/img/shopping%203.jpg" alt=" A Shopping bag">
+ <img src="https://shopping.s3.jp-tok.cloud-object-storage.appdomain.cloud/img/shopping%204jpg.jpg" alt=" A Shopping bag">
+ <img src="https://shopping.s3.jp-tok.cloud-object-storage.appdomain.cloud/img/shopping%205.jpg" alt=" A Shopping bag">
+</body>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "dbc9e160-1fd3-4fce-93e3-40330f27eff4", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "4909c99a-ecbf-462a-9644-dbd05b9613be", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script></html>
