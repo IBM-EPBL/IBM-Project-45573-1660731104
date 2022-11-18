@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css" /> 
+     <!--    Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <meta name="theme-color" content="#ffffff">
+     <!-- ===============================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+    
+    <title>Tracking & Shipping</title>
+</head>
+<style>
+    body {
+        letter-spacing: 0.8px;
+        background-image: linear-gradient(340deg,#2F3C7E, #C7D3D4FF);
+        background-repeat: no-repeat;    
+    }
+    
+    .container-fluid {
+        margin-top: 80px !important;
+        margin-bottom: 80px !important;
+    }
+    
+    p {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    
+    .cursor-pointer {
+        cursor: pointer;
+    }
+    
+    a{
+        text-decoration: none !important;
+        color: #5e6fa0 !important;
+    }
+    
+    .bold{
+        font-weight: 600;
+    }
+    
+    .small{
+        font-size: 12px !important;
+        letter-spacing: 0.5px !important;
+    }
+    
+    .Today{
+        color: rgb(83, 83, 83);
+    }
+    
+    .btn-outline-primary{
+        background-color: #fff !important;
+        color:#2F3C7E !important;
+        border:1.3px solid #2F3C7E;
+        font-size: 12px;
+        border-radius: 0.4em !important;
+    }
+    
+    .btn-outline-primary:hover{
+        background-color:#2F3C7E  !important;
+        color:#fff !important;
+        border:1.3px solid #2F3C7E;
+    }
+    
+    .btn-outline-primary:focus,
+    .btn-outline-primary:active {
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: #8793ce !important;
+    }
+     
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        color: #455A64;
+        padding-left: 0px;
+        margin-top: 30px
+    }
+    
+    #progressbar li {
+        list-style-type: none;
+        font-size: 13px;
+        width: 33.33%;
+        float: left;
+        position: relative;
+        font-weight: 400;
+        color: #455A64 !important;
+        
+    }
+    
+    #progressbar #step1:before {
+        content: "1";
+        color: #fff;
+        width: 29px;
+        margin-left: 15px !important;
+        padding-left: 11px !important;
+    }
+    
+    
+    #progressbar #step2:before {
+        content: "2";
+        color: #fff;
+        width: 29px;
+    
+    }
+    
+    #progressbar #step3:before {
+        content: "3";
+        color: #fff;
+        width: 29px;
+        margin-right: 15px !important;
+        padding-right: 11px !important;
+    }
+    
+    #progressbar li:before {
+        line-height: 29px;
+        display: block;
+        font-size: 12px;
+        background: #5c5d5e;
+        border-radius: 50%;
+        margin: auto;
+    }
+    
+     #progressbar li:after {
+        content: '';
+        width: 121%;
+        height: 2px;
+        background: #5c5d5e;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 15px;
+        z-index: -1;
+    } 
+    
+    #progressbar li:nth-child(2):after {
+        left: 50%;
+    }
+    
+    #progressbar li:nth-child(1):after {
+        left: 25%;
+        width: 121%;
+    }
+    #progressbar li:nth-child(3):after {
+        left: 25% !important;
+        width: 50% !important;
+    }
+    
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+        background: #2F3C7E; 
+    }
+    
+    .card {
+        background-color: #fff ;
+        box-shadow: 2px 4px 15px 0px rgb(0, 108, 170);
+        z-index: 0;
+    }
+    
+    small{
+        font-size: 12px !important;
+    }
+    
+    .a {
+        justify-content: space-between !important;
+    }
+    
+    .border-line {
+        border-right: 1px solid rgb(226, 206, 226)
+    }
+    
+    .card-footer img{
+        opacity: 0.3;
+    }
+    
+    .card-footer h5{
+        font-size: 1.1em;
+        color: #2F3C7E;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container-fluid my-5 d-sm-flex justify-content-center">
+        <div class="card px-2">
+            <div class="card-header bg-white">
+              <div class="row justify-content-between">
+                <div class="col">
+                    <p class="font-weight-bold text-bold">Thanks For Your Order!<span class="font-weight-bold text-dark">   Murugan</span></p> 
+                    <p class="text-muted"> Order ID  <span class="font-weight-bold text-dark">1222528743</span></p> 
+                    <p class="text-muted"> Place On <span class="font-weight-bold text-dark">12,Dec 2022</span> </p></div>
+                    <div class="flex-col my-auto">
+                        <h6 class="ml-auto mr-3">
+                            <a href="#">View Details</a>
+                        </h6>
+                    </div>
+              </div>
+            </div>
+            <div class="card-body">
+                <div class="media flex-column flex-sm-row">
+                    <div class="media-body ">
+                        <h5 class="bold">Bride Lehenga</h5>
+                        <p class="text-muted"> Qt: 1 Pair</p>
+                        <h4 class="mt-3 mb-4 bold"> <span class="mt-5">&#x20B9;</span>10,000 <span class="small text-muted"> via (COD) </span></h4>
+                        <p class="text-muted">Tracking Status on: <span class="Today">11:30pm, Today</span></p>
+                        <button type="button" class="btn  btn-outline-primary d-flex">Reached Hub, Delhi</button>    
+                    </div><img class="align-self-center img-fluid" src="https://womens.s3.jp-tok.cloud-object-storage.appdomain.cloud/len1.jpg" width="180 " height="180">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="media flex-column flex-sm-row">
+                    <div class="media-body ">
+                        <h5 class="bold">Casual Shirt</h5>
+                        <p class="text-muted"> Qt: 1 Pair</p>
+                        <h4 class="mt-3 mb-4 bold"> <span class="mt-5">&#x20B9;</span>900<span class="small text-muted"> via (Online Payment) </span></h4>
+                        <p class="text-muted">Tracking Status on: <span class="Today">10:30am, Tomorrow</span></p>
+                        <button type="button" class="btn  btn-outline-primary d-flex">Reached Madurai</button>    
+                    </div><img class="align-self-center img-fluid" src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt2.jpg" width="180 " height="180">
+                </div>
+            </div>
+            <div class="row px-3">
+                <div class="col">
+                    <ul id="progressbar" >
+                        <li class="step0 active " id="step1">PLACED</li>
+                        <li class="step0 active text-center" id="step2">SHIPPED</li>
+                        <li class="step0  text-muted text-right" id="step3">DELIVERED</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <p class="font-weight-bold text-dark" style="text-align:center;">Total Order Price<span class="font-weight-bold text-bold">     ₹10,900</span></p>     
+                </div>
+             <div class="card-footer  bg-white px-sm-3 pt-sm-4 px-0">
+                <div class="row text-center  ">
+                    <div class="col my-auto  border-line "><h5 >Track</h5></div>
+                    <div class="col  my-auto  border-line "><h5>Cancel</h5></div>
+                    <div class="col my-auto   border-line "><h5>Pre-pay</h5></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    </html>

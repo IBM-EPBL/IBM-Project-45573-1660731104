@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Mens Collection</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8f27d68390.js"crossorigin="anonymous"></script>
+    <!-- Style-->
+
+
+
+    <style>
+
+     /*Extra small devices (portrait phones, less than 576px)*/
+      @media (max-width: 575.98px) {  
+        body{
+        display: block;
+      } }
+      
+      /*Small devices (landscape phones, less than 768px)*/
+      @media (max-width: 767.98px) {  
+        body{
+        display: block;
+      } }
+      
+      /* Medium devices (tablets, less than 992px)*/
+      @media (max-width: 991.98px) {  
+        body{
+        display: block;
+      }}
+      
+      /*Large devices (desktops, less than 1200px)*/
+      @media (max-width: 1199.98px) {  
+        body{
+        display: block;
+      } }
+
+body {
+    font-family: Arial;
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  padding-top: 7%;
+  padding-bottom: 4% ;
+}
+
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+
+/* shopping cart*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*,
+*::after{
+margin:0 auto;
+padding:0;
+box-sizing: border-box;
+}
+:root{
+    --after-content:'2';
+}
+
+body{
+    width:100%;
+    font-family: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+header{
+    position: fixed;
+    left:0;
+    right:0;
+    top: 0;
+    height:10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+}
+h1{
+    color: #000;
+    text-align: center;
+    position: absolute;
+    font-size:8vh;
+}
+.cart-box{
+    width:26% !important;
+    position: absolute;
+    left:72%;
+    top:5%;
+    /* border:solid 1px blue; */
+    padding:10px 10px;
+}
+h2{
+    font-size: x-large;
+    padding:15px 10px;
+   
+}
+h4{
+  font-family: "Jost", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size:xx-large;
+  color: #000;
+  padding-bottom: 5%;
+  align-content: center;
+}
+h5{
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.cart-wrapper{
+    overflow-y: auto;
+    max-height: 350px;
+    width:24vw;
+}
+.subtotal{
+    text-align: right;
+    padding:5%;
+}
+.checkout, .view-cart{
+    width:95%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #2F3C7E;
+    font-size: large;
+    color: #fff;
+    margin:10px auto;
+    padding:10px 15px;
+}
+.view-cart{
+    background-color: #fff;
+    border: 2px solid #2F3C7E;
+    color: #2F3C7E;
+}
+.cart-icon{
+    text-align: right;
+}
+
+.cart-item{
+  display:grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  padding:5% 2%;
+  border-bottom:solid 1px lightgray;  
+}
+
+.cart-item img{
+    width:100%;
+}
+.cart-item .details{
+    padding-left:10%;
+}
+
+.cart-item h3{
+  text-align: left; 
+  margin-bottom:5%; 
+}
+
+.cart-item .price{
+display: block;
+text-align: right;
+margin-top: 35%; 
+  }
+  
+ .quantity{
+     display: block;
+     margin-top:5%;
+ } 
+
+ .fa-window-close{
+     color: #2F3C7E;
+ }
+ .cancel{
+     text-align: right;
+ }
+ .whole-cart-window{
+     border: solid lightgray 1px;
+     border-top:none;
+     position: fixed;
+     top:12vh;
+     background-color: #fff;
+     margin-right:2%;
+ }
+
+ .hide{
+     display: none;
+ }
+.non-empty::after{
+  content: var(--after-content);
+  font-size: 25px;
+  width:25px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top:-20px;
+  right:20%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    height:600px;
+    justify-content: center;
+    align-items: center;
+}
+.card-item img{
+    width:45%;
+}
+.card-item .details{
+    text-align: center;    
+}
+.card-item p,.card-item h3 {
+    margin-top:10px;   
+}
+.card-item span{
+    display: block;
+    margin-top:10px;
+}
+button{
+    width: fit-content;
+    margin:auto;
+    /* margin-top:10px; */
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #2F3C7E;
+    border-radius: 3px;
+    font-size: large;
+    color:#fff
+}
+.add-to-cart-btn{
+  width: fit-content;
+    margin:auto;
+    /* margin-top:10px; */
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #2F3C7E;
+    border-radius: 3px;
+    font-size: large;
+    color:#fff
+}
+
+</style>
+<body>
+
+      <!-- DIVI-->
+
+<div class="container">
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+</div>
+<!-- PRODUCT-->
+<header>
+  <h1> Mens Collection</h1>
+  <div class="cart-box">
+    <div class="cart-icon">
+      <i class="fas fa-cart-arrow-down fa-2x"></i>
+    </div>
+    <div class="whole-cart-window hide">
+      <h2>Shopping Bag</h2>
+      <div class="cart-wrapper">    
+</div>
+<div class="subtotal">Subtotal: ₹0.00</div>
+<div class="checkout">Checkout</div>
+<div  class="view-cart" src="">View Cart</div>
+</div>
+</div>
+</header>
+<h4 style="text-align:center" id="shirts">Shirts</h4>
+<div class="card-wrapper">
+<div data-id="1" class="card-item">
+<img src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt1.jpg"  style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Men's Formal Shirt</h3>
+  <p>
+    <span class="price">Price: ₹549</span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+<br><br>
+<!-- item 2 -->
+<div data-id="2" class="card-item">
+<img src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt2.jpg"  style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Chambray Shirt</h3>
+  <p>
+    <span class="price">Price: ₹788</span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+<br><br>
+<!-- product 3 -->
+<div data-id="3" class="card-item">
+<img src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt3.jpg" style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Branded Lycra Shirt</h3>
+  <p>
+    <span class="price">Price: ₹999</span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+
+<!-- product 4 -->
+<div data-id="4" class="card-item">
+<img src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt4.jpg" style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Formal Shirt</h3>
+  <p>
+    <span class="price">Price: ₹999</span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+<!-- product 5 -->
+<div data-id="5" class="card-item">
+<img src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt5.jpg" style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Office wear</h3>
+  <p>
+    <span class="price">Price: ₹1500</span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+
+<!-- product 6 -->
+<div data-id="6" class="card-item">
+<img src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt6.jpg" style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Casual Striped Shirt</h3>
+  <p>
+    <span class="price">Price: ₹649</span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+
+<!-- product 7 -->
+<div data-id="7" class="card-item">
+<img src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt7.jpg" style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Designer Shirt</h3>
+  <p>
+    <span class="price">Price: ₹2500</span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+
+<!-- product 8 -->
+<div data-id="8" class="card-item">
+<img src="https://menshrits.s3.jp-tok.cloud-object-storage.appdomain.cloud/shirt8.jpg" style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Solid White Shirt</h3>
+  <p>
+    <span class="price">Price: ₹999</span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+</div>
+<!--Pants-->
+ <h4 style="text-align:center" id="pants">Pants</h4>
+  <div class="card-wrapper">
+<!-- product 9 -->
+<div data-id="9" class="card-item">
+<img src="https://menpants.s3.jp-tok.cloud-object-storage.appdomain.cloud/pant1.jpg" style="width: 350px; height: 400px;"/>
+<div class="details">
+  <h3>Blue Lycra pants</h3>
+  <p>
+    <span class="price">Price: ₹899    </span>
+    <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+    <span class="add-to-cart-btn">Add To Cart</span>  
+  </p>
+</div>
+</div>
+
+<!-- product 10 -->
+<div data-id="10" class="card-item">
+  <img src="https://menpants.s3.jp-tok.cloud-object-storage.appdomain.cloud/pant2.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Formal Pant</h3>
+    <p>
+      <span class="price">Price: ₹899</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 11 -->
+<div data-id="11" class="card-item">
+  <img src="https://menpants.s3.jp-tok.cloud-object-storage.appdomain.cloud/pant3.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Lycra Pant</h3>
+    <p>
+      <span class="price">Price: ₹999</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 12 -->
+<div data-id="12" class="card-item">
+  <img src="https://menpants.s3.jp-tok.cloud-object-storage.appdomain.cloud/pant4.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Casual Solid Pant</h3>
+    <p>
+      <span class="price">Price: ₹999 </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+</div>
+</section>
+<!--<h4 style="text-align:center" id="shirts">Shirts</h4>
+<section class="shop-section"  id="shirts">
+<div class="card-wrapper"> 
+  <!-- product 13 -->
+<div data-id="13" class="card-item">
+  <img src="https://menpants.s3.jp-tok.cloud-object-storage.appdomain.cloud/pant5.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Stylish slim Fit</h3>
+    <p>
+      <span class="price">Price: ₹1999</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 14 -->
+<div data-id="14" class="card-item">
+  <img src="https://menpants.s3.jp-tok.cloud-object-storage.appdomain.cloud/pant6.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Men Check Trousers</h3>
+    <p>
+      <span class="price">Price: ₹649      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 15 -->
+<div data-id="15" class="card-item">
+  <img src="https://menpants.s3.jp-tok.cloud-object-storage.appdomain.cloud/pant7.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Chino Pant</h3>
+    <p>
+      <span class="price">Price: ₹1500</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 16 -->
+<div data-id="16" class="card-item">
+  <img src="https://menpants.s3.jp-tok.cloud-object-storage.appdomain.cloud/pant8.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Distressed Jeans</h3>
+    <p>
+      <span class="price">Price: ₹1149      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+</div>
+</section>
+<!--Suits-->
+ <h4 style="text-align:center" id="suits">Coat Suits</h4>
+<div class="card-wrapper">
+  <!-- product 17 -->
+<div data-id="17" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/suits/suit1.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Fit Formal Suit</h3>
+    <p>
+      <span class="price">Price: ₹1555</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 18 -->
+<div data-id="18" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/suits/suit2.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Parsh Lycra Solid Suit </h3>
+    <p>
+      <span class="price">Price: ₹2999</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 19 -->
+<div data-id="19" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/suits/suit3.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Vest Slim Suit</h3>
+    <p>
+      <span class="price">Price: ₹2500</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 20 -->
+<div data-id="20" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/suits/suit4.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Tuxedo Suit</h3>
+    <p>
+      <span class="price">Price: ₹1800</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 21 -->
+<div data-id="21" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/suits/suit5.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Solid Slim Suit</h3>
+    <p>
+      <span class="price">Price: ₹1444</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 22 -->
+<div data-id="22" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/suits/suit6.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Trulyfeb Solid Suit</h3>
+    <p>
+      <span class="price">Price: ₹2499</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 23 -->
+<div data-id="23" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/suits/suit7.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Humjoli Solid Suit</h3>
+    <p>
+      <span class="price">Price: ₹1999</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 24 -->
+<div data-id="8" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/suits/suit8.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Viscose Solid Suit</h3>
+    <p>
+      <span class="price">Price: ₹1599</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+</div>
+<!-- Tracks -->
+  <h4 style="text-align:center" id="tracks">Track Pants</h4>
+  <div class="card-wrapper">
+  <!-- product 25 -->
+<div data-id="8" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/track%20pants/track1.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Fastdry Active Essential Track Pants</h3>
+    <p>
+      <span class="price">Price: ₹999</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 26 -->
+<div data-id="26" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/track%20pants/track2.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Hosiery Casual Track</h3>
+    <p>
+      <span class="price">Price: ₹555</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 27 -->
+<div data-id="27" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/track%20pants/track3.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Blue Tracks</h3>
+    <p>
+      <span class="price">Price: ₹650</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+  <!-- product 28 -->
+<div data-id="28" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/track%20pants/track4.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Casual Track(Chocolate Brown)</h3>
+    <p>
+      <span class="price">Price: ₹599</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+    <!-- product 29 -->
+<div data-id="29" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/track%20pants/track5.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Casual Track(Grey)</h3>
+    <p>
+      <span class="price">Price: ₹599</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+    <!-- product 30 -->
+<div data-id="30" class="card-item">
+  <img src="https://mens.s3.jp-tok.cloud-object-storage.appdomain.cloud/track%20pants/track6.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Casual Track(Black)</h3>
+    <p>
+      <span class="price">Price: ₹599</span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+</div>
+<!--T-Shirts-->
+  <h4 style="text-align:center" id="t-shirt">T-Shirts</h4>
+  <div class="card-wrapper">
+    <!-- product 31 -->
+<div data-id="31" class="card-item">
+  <img src="https://mentshirts.s3.jp-tok.cloud-object-storage.appdomain.cloud/tshirt1.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Basic Half Sleeves Tshirt</h3>
+    <p>
+      <span class="price">Price: ₹699      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+    <!-- product 32 -->
+<div data-id="32" class="card-item">
+  <img src="https://mentshirts.s3.jp-tok.cloud-object-storage.appdomain.cloud/tshirt2.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Crew Neck Tshirt</h3>
+    <p>
+      <span class="price">Price: ₹788      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+
+    <!-- product 33 -->
+<div data-id="33" class="card-item">
+  <img src="https://mentshirts.s3.jp-tok.cloud-object-storage.appdomain.cloud/tshirt3.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Turtle Neck Tshirt</h3>
+    <p>
+      <span class="price">Price: ₹899      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+
+    <!-- product 34 -->
+<div data-id="34" class="card-item">
+  <img src="https://mentshirts.s3.jp-tok.cloud-object-storage.appdomain.cloud/tshirt4.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Graphic Tshirt</h3>
+    <p>
+      <span class="price">Price: ₹780      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+
+    <!-- product 35 -->
+<div data-id="35" class="card-item">
+  <img src="https://mentshirts.s3.jp-tok.cloud-object-storage.appdomain.cloud/tshirt5.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Casual Tshirt</h3>
+    <p>
+      <span class="price">Price: ₹499      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+
+    <!-- product 36 -->
+<div data-id="36" class="card-item">
+  <img src="https://mentshirts.s3.jp-tok.cloud-object-storage.appdomain.cloud/tshirt6.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Polo Tshirt</h3>
+    <p>
+      <span class="price">Price: ₹769      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+
+    <!-- product 37 -->
+<div data-id="37" class="card-item">
+  <img src="https://mentshirts.s3.jp-tok.cloud-object-storage.appdomain.cloud/tshirt7.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Roden Striped Round Neck Tshirt</h3>
+    <p>
+      <span class="price">Price: ₹650      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+
+
+    <!-- product 38 -->
+<div data-id="38" class="card-item">
+  <img src="https://mentshirts.s3.jp-tok.cloud-object-storage.appdomain.cloud/tshirt8.jpg" style="width: 350px; height: 400px;"/>
+  <div class="details">
+    <h3>Yoke Neck Tshirt</h3>
+    <p>
+      <span class="price">Price: ₹550      </span>
+      <a href="./shopnow.html"><span class="add-to-cart-btn">Buy Now</a></span>
+      <span class="add-to-cart-btn">Add To Cart</span>    
+    </p>
+  </div>
+  </div>
+</div>
+</section>
+<script> 
+  class CartItem{
+    constructor(name, desc, img, price){
+        this.name = name
+        this.desc = desc
+        this.img=img
+        this.price = price
+        this.quantity = 1
+   }
+}
+
+class LocalCart{
+    static key = "cartItems"
+
+    static getLocalCartItems(){
+        let cartMap = new Map()
+     const cart = localStorage.getItem(LocalCart.key)   
+     if(cart===null || cart.length===0)  return cartMap
+        return new Map(Object.entries(JSON.parse(cart)))
+    }
+
+    static addItemToLocalCart(id, item){
+        let cart = LocalCart.getLocalCartItems()
+        if(cart.has(id)){
+            let mapItem = cart.get(id)
+            mapItem.quantity +=1
+            cart.set(id, mapItem)
+        }
+        else
+        cart.set(id, item)
+       localStorage.setItem(LocalCart.key,  JSON.stringify(Object.fromEntries(cart)))
+       updateCartUI()
+        
+    }
+
+    static removeItemFromCart(id){
+    let cart = LocalCart.getLocalCartItems()
+    if(cart.has(id)){
+        let mapItem = cart.get(id)
+        if(mapItem.quantity>1)
+       {
+        mapItem.quantity -=1
+        cart.set(id, mapItem)
+       }
+       else
+       cart.delete(id)
+    } 
+    if (cart.length===0)
+    localStorage.clear()
+    else
+    localStorage.setItem(LocalCart.key,  JSON.stringify(Object.fromEntries(cart)))
+       updateCartUI()
+    }
+}
+
+
+const cartIcon = document.querySelector('.fa-cart-arrow-down')
+const wholeCartWindow = document.querySelector('.whole-cart-window')
+wholeCartWindow.inWindow = 0
+const addToCartBtns = document.querySelectorAll('.add-to-cart-btn')
+addToCartBtns.forEach( (btn)=>{
+    btn.addEventListener('click', addItemFunction)
+}  )
+
+function addItemFunction(e){
+    const id = e.target.parentElement.parentElement.parentElement.getAttribute("data-id")
+    const img = e.target.parentElement.parentElement.previousElementSibling.src
+    const name = e.target.parentElement.previousElementSibling.textContent
+    const desc = e.target.parentElement.children[0].textContent
+    let price = e.target.parentElement.children[1].textContent
+    price = price.replace("Price: ₹", '')
+    const item = new CartItem(name, desc, img, price)
+    LocalCart.addItemToLocalCart(id, item)
+ console.log(price)
+}
+
+
+cartIcon.addEventListener('mouseover', ()=>{
+if(wholeCartWindow.classList.contains('hide'))
+wholeCartWindow.classList.remove('hide')
+})
+
+cartIcon.addEventListener('mouseleave', ()=>{
+    // if(wholeCartWindow.classList.contains('hide'))
+    setTimeout( () =>{
+        if(wholeCartWindow.inWindow===0){
+            wholeCartWindow.classList.add('hide')
+        }
+    } ,500 )
+    
+    })
+
+ wholeCartWindow.addEventListener('mouseover', ()=>{
+     wholeCartWindow.inWindow=1
+ })  
+ 
+ wholeCartWindow.addEventListener('mouseleave', ()=>{
+    wholeCartWindow.inWindow=0
+    wholeCartWindow.classList.add('hide')
+})  
+ 
+
+function updateCartUI(){
+    const cartWrapper = document.querySelector('.cart-wrapper')
+    cartWrapper.innerHTML=""
+    const items = LocalCart.getLocalCartItems()
+    if(items === null) return
+    let count = 0
+    let total = 0
+    for(const [key, value] of items.entries()){
+        const cartItem = document.createElement('div')
+        cartItem.classList.add('cart-item')
+        let price = value.price*value.quantity
+        price = Math.round(price*100)/100
+        count+=1
+        total += price
+       // total = Math.round(total*100)/100
+        cartItem.innerHTML =
+        `
+        <img src="${value.img}"> 
+                       <div class="details">
+                           <h3>${value.name}</h3>
+                           <p>${value.desc}
+                            <span class="quantity">Quantity: ${value.quantity}</span>
+                               <span class="price">Price: ₹ ${price}</span>
+                           </p>
+                       </div>
+                       <div class="cancel"><i class="fas fa-window-close"></i></div>
+        `
+       cartItem.lastElementChild.addEventListener('click', ()=>{
+           LocalCart.removeItemFromCart(key)
+       })
+        cartWrapper.append(cartItem)
+    }
+
+    if(count > 0){
+        cartIcon.classList.add('non-empty')
+        let root = document.querySelector(':root')
+        root.style.setProperty('--after-content', `"${count}"`)
+        const subtotal = document.querySelector('.subtotal')
+        subtotal.innerHTML = `SubTotal: ₹${total}`
+    }
+    else
+    cartIcon.classList.remove('non-empty')
+}
+document.addEventListener('DOMContentLoaded', ()=>{updateCartUI()})
+    
+
+</script>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "a8642f36-1afe-4ffd-ab91-df18827ac182", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "8766e27c-2c49-4620-b17d-958adf80736d", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Contact Us</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://maayo.s3.jp-tok.cloud-object-storage.appdomain.cloud/logo.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+</head>
+
+<style>
+    
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  resize: none;
+}
+
+body{
+  background-image: linear-gradient(340deg,#2F3C7E, #C7D3D4FF)
+}
+
+.contact-us{
+  width: 250px;
+  background: #fff;
+  padding: 50px;
+  margin: 30px auto;
+  border-radius: 30px;
+  position: relative;
+}
+
+.title h1{
+  color: #2F3C7E;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+
+.form,
+.form-items{
+  width: 100%;
+}
+
+.form-items .input{
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background: #ebeef1;
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+}
+
+.form-items .input.message{
+  height: 125px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+}
+
+.btn{
+  background: #2F3C7E;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn1{
+    background: #2F3C7E;
+    text-align: center;
+    color: #fff;
+    padding: 25px 15px;
+    cursor: pointer;
+  }
+  
+.btn .fas{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.form-items{
+  position: relative;
+}
+
+.form-items .fas{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #9a99aa;
+}
+
+.social-icons{
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons div{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.social-icons div .fab{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+
+.social-icons div.facebook{
+  background: #5178d9;
+}
+
+.social-icons div.twitter{
+  background: #41caf6;
+}
+
+.social-icons div.google{
+  background: #fb4f4f;
+}
+
+</style>
+
+
+<body>
+
+    <!-- main-->
+
+<div class="contact-us">
+  <div class="title">
+    <h1>Contact us</h1>
+  </div>
+  <div class="form">
+    <div class="form-items">
+      <input type="text" class="input" placeholder="Username">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="form-items">
+      <input type="text" class="input" placeholder="Email">
+      <i class="fas fa-envelope"></i>
+    </div>
+    <div class="form-items">
+      <textarea class="input message" cols="30" rows="10" placeholder="Message....."></textarea>
+    </div>
+  </div>
+  
+  <div class="btn" onclick="popUp()" id="pop">
+    Submit
+    <i class="fas fa-arrow-right"></i>
+  </div>
+  
+  
+  <div class="social-icons">
+    <div class="facebook">
+      <i class="fab fa-facebook-f"></i>
+    </div>
+    <div class="twitter">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="google">
+      <i class="fab fa-google"></i>
+    </div>
+  </div>
+  
+</div>
+<div class="btn1">
+    <i class="fas fa-arrow-left" ></i>
+  <a class="back" href="./home.html">Back</a>
+</div>
+<script>
+  
+function popUp(){
+  swal({
+    title: "Good",
+    text: "Your Message is Sended",
+    icon: "success",
+    button: "Ok",
+  });
+}
+</script>
+</body>
+</html>
