@@ -1,5 +1,5 @@
 <div align= "center">
-<img scr="[https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg](https://upload.wikimedia.org/wikipedia/commons/f/fc/IBM_logo_in.jpg)" align="center" alt="ibm" Width="200"/>
+<img scr="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" align="center" alt="ibm" Width="200"/>
 
 <h1>SMART FASHION RECOMMENDER APPLICATION</h1>
 
